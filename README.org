@@ -9,7 +9,7 @@
 ** Getting Started
    I set these instructions up purely for ibus and not setxkbmap, as there are already excellent instructions for using setxkbmap up, as long as you have a QWERTY keyboard layout or near relative. My setup doesn't care what keyboard layout you have, as long as you've already installed ibus. You'll also need to install ibus-table to make the custom IME.
 
-   There are two files to create for this little project, first the text file to feed into ibus-table-createdb, the second is the SVG (or PNG, both will work) icon file. Some artistic skills with inkscape (to create the svg file for the icon) might be a good idea until there's an official APL icon that looks worthwhile. I created an apl.svg file from one posted as a sample to the Discord chat, but it's not the official logo.
+   There are two files to create for this little project, first the text file to feed into ibus-table-createdb (which I've provided here), the second is the SVG (or PNG, both will work) icon file. Some artistic skills with inkscape (to create the svg file for the icon) might be a good idea until there's an official APL icon that looks worthwhile. I created an apl.svg file from one posted as a sample to the Discord chat, but it's not the official logo.
 
 ** My APL file
    :PROPERTIES:
