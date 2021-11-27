@@ -237,14 +237,14 @@ $ sudo ibus-table-createdb -n /usr/share/ibus-table/tables/apl.db -s en-US-APL.t
 Once you've created your icon file, you can also copy this into place like this:
 
 #+BEGIN_SRC sh
-sudo cp apl.svg /usr/share/ibus-table/icons/
+$ sudo cp apl.svg /usr/share/ibus-table/icons/
 #+END_SRC
 
 ** Testing with an existing ibus setup
 This should get your existing input restarted with the new files available for selection.
 
 #+BEGIN_SRC sh
-ibus-daemon -drx
+$ ibus-daemon -drx
 #+END_SRC
 
 Right-click on the keyboard icon in your system tray, you should then see a menu that includes "Preferences". Select that, then in the window that turns up, choose the Input Method tab. You'll see a list of the methods you've already installed, or perhaps only one if you haven't (the English, English US method). Add a new method with the Add button to the right. Select "English", and scroll down the list until you find "English, (US APLinput)" and choose it. You may also want to choose a key to switch input methods in the General tab, and it shouldn't interfere with anything else you've got set up in the system.
