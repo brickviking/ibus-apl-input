@@ -248,7 +248,9 @@ ibus-daemon -drx
 #+END_SRC
 
 Right-click on the keyboard icon in your system tray, you should then see a menu that includes "Preferences". Select that, then in the window that turns up, choose the Input Method tab. You'll see a list of the methods you've already installed, or perhaps only one if you haven't (the English, English US method). Add a new method with the Add button to the right. Select "English", and scroll down the list until you find "English, (US APLinput)" and choose it. You may also want to choose a key to switch input methods in the General tab, and it shouldn't interfere with anything else you've got set up in the system.
+
 Start up gnu apl inside a terminal that supports ibus input (perhaps gnome-terminal), or start up the RIDE interface to Dyalog (assuming you've installed both RIDE and Dyalog). You can then switch layouts with the keyboard shortcut you chose (I chose Win-Alt-Spacebar) until English (US, APLinput) turns up.
+
 You may see a new tab bar turn up with a checkbox and APL next to it. You'll usually see "Switch input (Left Shift)" when you put the mouse pointer over it. If your checkbox is checked, then congratulations! You can now type APL characters directly. To switch back out of APL mode into normal mode to type normal letters, hit the left shift. If the checkbox doesn't go away, switch to an application that you have to enter text into, then hit Left Shift again—a browser with an input field selected, Discord client, or gnome-terminal are examples that work for me.
 ** Testing without ibus installed
 For this, all I can suggest is that you can get ibus installed and working for you. If you're in a position that ibus isn't a good fit for your system (i.e. you're using fcitx or some other input method already), then you have to figure out how to convert from these instructions to the input methods you're using. I lack the experience to help out on this front.
