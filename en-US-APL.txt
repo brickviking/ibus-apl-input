@@ -1,0 +1,201 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This table under LGPL
+### comments start with ### not single #
+### Derive from the format of SCIM Table, so you can modify the table from
+### scim-tables' table
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+
+### Begin Table definition.
+BEGIN_DEFINITION
+
+### License
+LICENSE = LGPL
+
+### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+UUID = 049bc7a3-9fd6-443e-b598-f6813395403e
+
+### A unique number indicates the version of this file.
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+### Just make your table version-able
+SERIAL_NUMBER = 20211125
+
+### ICON can be any format as long as your pygtk can recognized
+### the most widely ones are "png" and "svg", letter one is recommended
+ICON = apl.svg
+
+### The symbol to be displayed in IM switchers
+SYMBOL = APL
+
+### The default name of this table, this is needed
+NAME = English (US, APLInput)
+
+### The local names of this table, this is optional
+
+
+### Description
+DESCRIPTION = APL input method.
+
+### Supported languages of this table
+### sigle "zh_CN" just be recognized as zh_CN,
+### but "zh_CN, zh_HK" or more zh_XX will be recognized as zh;
+### and "en_US, zh_CN" will be just ignored.
+### LANGUAGES = zh_CN,zh_SG,zh_TW,zh_HK
+LANGUAGES = en_US
+
+### The author of this table
+AUTHOR = BrickViking  <brickviking@gmail.com> 
+
+### Prompt string to be displayed in the status area, CN will be replaced by
+### the gettext tools in runtime as 中.
+STATUS_PROMPT = A
+
+### Valid input chars. Needs the == at the front so we can stick a = into the real string.
+### Only works because this is a Unicode file.
+VALID_INPUT_CHARS== =abcdefghijklmnopqrstuvwxyzEIJKLOPTZ1234567890[](){}!@#$%^&/?|-_;:&\'",.<>+~`*
+
+### Layout
+LAYOUT = default
+
+### The max number of input keys for every phrase or character.
+MAX_KEY_LENGTH = 2
+
+### Use auto_commit mode as default
+AUTO_COMMIT = TRUE
+
+### Automatically selects the first phrase when typing
+AUTO_SELECT = FALSE
+
+### Use full width punctuation by default
+### DEF_FULL_WIDTH_PUNCT = TRUE
+### Not use full width letter by default
+### DEF_FULL_WIDTH_LETTER = FALSE
+
+### Whether user are allow to define phrase, default is true
+### You have to define the word construction rules below.
+### For input methods which do not input phrases, set this to False
+USER_CAN_DEFINE_PHRASE = FALSE
+
+### Whether support PinYin Mode, default is true.
+### this feature is just for Chinese, set it to False if your IM is not
+### Chinese.
+PINYIN_MODE = FALSE
+
+### If true then the phrases' frequencies will be adjusted dynamically
+### according your using frequency.
+DYNAMIC_ADJUST = FALSE 
+
+### Some characters whose frequencies should be fix all the time, e.g. 
+### some punctuations
+### NO_CHECK_CHARS = 
+
+### The key strokes to page up the lookup table.
+### PAGE_UP_KEYS = Page_Up,KP_Page_Up,minus,comma
+
+### The key strokes to page down.
+### PAGE_DOWN_KEYS = Page_Down,KP_Page_Down,equal,period
+
+### The key strokes to select candidiate phrases.
+### Usually "1,2,3,4,5,6,7,8,9" but if this conflicts with
+### characters one wants to use for input one can also
+### use something like “F1,F2,F3,F4,F5,F6,F7,F8,F9”
+SELECT_KEYS = "F1,F2,F3,F4,F5,F6,F7,F8,F9"
+
+### The default orientation of the candidate list
+### TRUE means the candidate list is vertical, FALSE means it is vertical
+ORIENTATION=TRUE
+
+END_DEFINITION
+
+### Begin Table data.
+### Format of every line whose formated in "input_keys\tphrase\tfreq\n" is an
+### entry.
+### From left to right, the 1st column are the input key combination that you
+### entered via keyboard; the 2nd column are presented character or phrase of
+### the key combination you want; the 3rd column are frequency of the character
+### or phrase.
+### Had to switch out = in the above string for A, need to do the same down here.
+BEGIN_TABLE
+a	⍺	1
+b	⊥	1
+c	∩	1
+d	⌊	1
+e	∊	1
+f	_	1
+g	∇	1
+h	∆	1
+i	⍳	1
+j	∘	1
+k	'	1
+l	⎕	1
+m	|	1
+n	⊤	1
+o	○	1
+p	*	1
+q	?	1
+r	⍴	1
+s	⌈	1
+t	~	1
+u	↓	1
+v	∪	1
+w	⍵	1
+x	⊃	1
+y	↑	1
+z	⊂	1
+E	⍷	1
+I	⍸	1
+J	⍤	1
+K	⌸	1
+L	⌷	1
+O	⍥	1
+P	⍣	1
+T	⍨	1
+Z	⊆	1
+`	⋄	1
+1	¨	1
+2	¯	1
+3	<	1
+4	≤	1
+5	=	1
+6	≥	1
+7	>	1
+8	≠	1
+9	∨	1
+0	∧	1
+~	⌺	1
+!	⌶	1
+@	⍫	1
+#	⍒	1
+$	⍋	1
+%	⌽	1
+^	⍉	1
+&	⊖	1
+*	⍟ 	1
+(	⍱	1
+)	⍲	1
+[	←	1
+]	→	1
+{	⍞	1
+}	⍬	1
+'	⍕	1
+"	≢	1
+,	⍝	1
+.	⍀	1
+<	⍪	1
+>	⍙	1
+;	⍎	1
+:	≡	1
+/	⌿	1
+A	÷	1
+=	÷	1
+\	⊢	1
+?	⍠	1
++	⌹	1
+|	⊣	1
+-	×	1
+_	!	1
+END_TABlE
+
