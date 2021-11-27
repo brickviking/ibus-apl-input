@@ -1,7 +1,9 @@
 * Setup of ibus-based input method for APL
 ** Introduction
    I learned about APL the other day. You know, that language with the really weird character set? If you don't know about it, go look it up. Anyhow, I needed to create a file that would allow me to input APL characters whenever I was typing into the GNU APL or Dyalog interpreter. It needed to work with ibus, because I already had several other character sets set up for my system.
+
    I'm a Dvorak user, and the instructions for setting up APL input usually indicate using setxkbmap with the system-provided APL keyboard mapping, either using the Dyalog variant, or some other apl variant. Those instructions all assume a QWERTY keyboard as the basis for conversions so that the r key comes up as ⍴ and the i key would emit ⍳. As I'm not a QWERTY keyboard user, and most of the setxkbmap instructions assume a QWERTY layout, I'd hit the i key to get ⍳ and get ∇ instead, or I'd hit p to get ⍴ and get ○ instead. Not ideal if I want to use transliteration-based input. Even the q key would give me ⊃ instead of ?, which isn't much use!
+
    So I did something about it.
 
 ** Getting Started
