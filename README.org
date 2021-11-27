@@ -15,7 +15,7 @@
    :END:
 
    This file got munged from a version first posted to http://www.studymongolian.net/technical/how-to-create-linux-input-method-editor/, though I tailored the table to provide APL characters instead. I'm grateful to the author of that article, he made it understandable so I could set this file up. Edit this example file, changing the UUID to something unique, usually running the uuidgen command in a shell will give you one that you can use.
-If needed, you'll want to change the author name inside the file, just in case you want to shuffle some stuff around. I didn't create the original version of this file, that comes from the ibus-table project. You really need to save this file with a UTF-8 encoding, or things might not work out right. Most editors will handle this seamlessly for you.
+If needed, you'll want to change the author name inside the file, just in case you want to shuffle some stuff around. I didn't create the original version of this file, that comes from the ibus-table project. You really need to save this file with a UTF-8 encoding, or things might not work out right. Most editors will handle this seamlessly for you. I've provided the file separately (as en-US-APL.txt) so you don't have to cut-and-paste from inside this, but the file should look the same as the example shown here.
 
 #+BEGIN_SRC
 
